@@ -2,8 +2,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
 
-import "@/index.css";
-
 const TabsComponent = () => {
   return (
     <div className="flex w-full flex-col mt-10">

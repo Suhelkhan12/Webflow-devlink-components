@@ -1,0 +1,68 @@
+{
+  "id": "_SuhelReactComponents",
+  "name": "_SuhelReactComponents",
+  "metaData": {
+    "name": "_SuhelReactComponents",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "0.0.0",
+      "buildName": "assignment"
+    },
+    "remoteEntry": {
+      "name": "remoteEntry.js",
+      "path": "",
+      "type": "global"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "",
+      "api": ""
+    },
+    "globalName": "_SuhelReactComponents",
+    "pluginVersion": "0.20.0",
+    "prefetchInterface": false,
+    "publicPath": "http://localhost:4000/"
+  },
+  "shared": [],
+  "remotes": [],
+  "exposes": [
+    {
+      "id": "_SuhelReactComponents:@webflow_renderer",
+      "name": "@webflow_renderer",
+      "assets": {
+        "js": {
+          "sync": [
+            "3.js",
+            "__federation_expose_scope_webflow_renderer.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      },
+      "path": "./@webflow_renderer"
+    },
+    {
+      "id": "_SuhelReactComponents:Tabs",
+      "name": "Tabs",
+      "assets": {
+        "js": {
+          "sync": [
+            "3.js",
+            "995.js",
+            "__federation_expose_Tabs.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      },
+      "path": "./Tabs"
+    }
+  ]
+}
