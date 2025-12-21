@@ -1,0 +1,17 @@
+{
+  "library": {
+    "name": "Suhel react components",
+    "components": [
+      "./src/**/*.webflow.@(js|jsx|mjs|ts|tsx)"
+    ],
+    "description": "Better components",
+    "id": "suhel-react-components"
+  },
+  "telemetry": {
+    "global": {
+      "allowTelemetry": true,
+      "lastPrompted": 1766329697417,
+      "version": "1.10.0"
+    }
+  }
+}
