@@ -25,6 +25,9 @@
   position: relative;
 }
 [data-tabs][data-varriant="full-w"] {
+  width: 100%;
+}
+[data-tabs][data-varriant="second-instance"] {
   max-width: 25rem;
   width: 100%;
 }
@@ -46,7 +49,7 @@
 
 [data-tabs-list][data-position="abs"] {
   position: absolute;
-  right: 0px;
+  right: 0;
   top: 10px;
 }
 

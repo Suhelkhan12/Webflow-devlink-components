@@ -6,8 +6,14 @@ import "./CustomTabs.css";
 
 const CustomTabs = () => {
   return (
-    <Tabs defaultValue={"trigger"}>
-      <TabsList>
+    <Tabs defaultValue={"trigger"} data-varriant="full-w">
+      <TabsList
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-between",
+        }}
+      >
         <TabsTrigger value="trigger">Trigger</TabsTrigger>
         <TabsTrigger value="handler">Handler</TabsTrigger>
         <TabsTrigger value="emit">Emit</TabsTrigger>
@@ -24,7 +30,7 @@ const CustomTabs = () => {
             contains two parts:
           </p>
         </div>
-        <Tabs defaultValue={"api-trigger"} data-varriant="full-w">
+        <Tabs defaultValue={"api-trigger"} data-varriant="second-instance">
           <TabsList data-varriant="full-w">
             <TabsTrigger value="api-trigger">Api trigger</TabsTrigger>
             <TabsTrigger value="event-trigger">Event trigger</TabsTrigger>
