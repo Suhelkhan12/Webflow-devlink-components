@@ -1,0 +1,112 @@
+/* Root */
+[data-tabs] {
+  /* spacing */
+  --tabs-gap: 6px;
+  --tabs-radius: 10px;
+
+  /* colors */
+  --tabs-bg: #0a0a0a;
+  --tabs-border: #1f1f1f;
+
+  --trigger-color: #a1a1aa;
+  --trigger-color-active: #ffffff;
+
+  --trigger-bg: transparent;
+  --trigger-bg-hover: #18181b;
+  --trigger-bg-active: #27272a;
+
+  --content-color: #e5e7eb;
+
+  font-family: inherit;
+  color: var(--content-color);
+}
+
+[data-tabs] {
+  position: relative;
+}
+[data-tabs][data-varriant="full-w"] {
+  max-width: 25rem;
+  width: 100%;
+}
+
+/* List */
+[data-tabs-list] {
+  display: inline-flex;
+  gap: var(--tabs-gap);
+  padding: 4px;
+  background: var(--tabs-bg);
+  border: 1px solid var(--tabs-border);
+  border-radius: var(--tabs-radius);
+}
+
+[data-tabs-list][data-varriant="full-w"] {
+  display: flex;
+  justify-content: space-between;
+}
+
+[data-tabs-list][data-position="abs"] {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+
+/* Trigger */
+[data-tabs-trigger] {
+  all: unset;
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: calc(var(--tabs-radius) - 2px);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--trigger-color);
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover */
+[data-tabs-trigger]:hover {
+  background: var(--trigger-bg-hover);
+}
+
+/* Active */
+[data-tabs-trigger][data-state="active"] {
+  color: var(--trigger-color-active);
+  background: var(--trigger-bg-active);
+  box-shadow: inset 0 0 0 1px #3f3f46;
+}
+
+/* Focus (keyboard) */
+[data-tabs-trigger]:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+}
+
+/* Content */
+[data-tabs-content] {
+  margin-top: 1rem;
+  padding: 0px 36px;
+  color: var(--content-color);
+  display: flex;
+  gap: 2rem;
+}
+[data-tabs-content] {
+  margin-top: 0.5rem;
+  padding: 0px 0px;
+  color: var(--content-color);
+  display: flex;
+  gap: 2rem;
+}
+
+[data-tabs-content] .content-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+[data-tabs-content] .content-h2 {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+[data-tabs-content] .content-p {
+  font-size: medium;
+}

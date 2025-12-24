@@ -3,7 +3,7 @@ import { declareComponent } from "@webflow/react";
 
 const TabsWebflow = declareComponent(TabsComponent, {
   name: "Tabs",
-  description: "Tabs component using react",
+  description: "Tabs component using shadcn",
 });
 
 export default TabsWebflow;

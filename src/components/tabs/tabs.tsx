@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 const TabsComponent = () => {
   return (
-    <div className="flex w-full flex-col mt-10">
+    <div className="flex w-full flex-col mt-10 text-white">
       <Tabs defaultValue="trigger">
         <TabsList className="mb-14 flex justify-between w-full   text-white p-0 bg-foreground">
           <TabsTrigger

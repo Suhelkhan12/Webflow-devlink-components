@@ -121,9 +121,3 @@
     @apply bg-foreground text-foreground;
   }
 }
-
-@layer components {
-  .code-input {
-    @apply bg-muted-foreground text-white/80 rounded-sm px-2;
-  }
-}
